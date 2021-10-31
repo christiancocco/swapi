@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\File;
 
 class InstallSwapiCommand extends Command
 {
-    protected $signature = 'swapipackage:install';
+    protected $signature = 'swapi:install';
 
     protected $description = 'Install the SwapiPackage';
 

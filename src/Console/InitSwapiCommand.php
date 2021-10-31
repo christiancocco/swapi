@@ -10,7 +10,7 @@ use ChristianCocco\Swapi\Models\Planet;
 
 class InitSwapiCommand extends Command
 {
-    protected $signature = 'swapipackage:init';
+    protected $signature = 'swapi:init';
 
     protected $description = 'Init the Swapi Data';
 
