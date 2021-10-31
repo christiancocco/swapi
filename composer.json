@@ -1,6 +1,10 @@
 {
     "name": "christiancocco/swapi",
     "description": "Swapi Integration",
+    "keywords": ["swapi"],
+    "homepage": "https://github.com/christiancocco/swapi",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "christiancocco",
