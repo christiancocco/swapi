@@ -46,6 +46,7 @@ class SwapiController extends Controller
         ->when($sort != "null" && $sort != '', function($q) use($sort, $sortVer) {
             $q->orderBy($sort, $sortVer);
         })
+        ->with(['planet'])
         ->paginate($itemPerPage);
         return $results;
     }
