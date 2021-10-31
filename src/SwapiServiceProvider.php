@@ -25,8 +25,9 @@ class SwapiServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__ . '/routes/routes.php';
-        include __DIR__ . '/routes/api.php';
+        //Load Routes
+        $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
 
         // Register the command if we are using the application via the CLI
         if ($this->app->runningInConsole()) {

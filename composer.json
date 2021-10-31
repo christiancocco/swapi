@@ -9,7 +9,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "phpunit/phpunit": "9.5.x-dev"
     },
     "extra": {
         "laravel": {
