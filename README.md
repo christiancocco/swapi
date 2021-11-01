@@ -62,11 +62,19 @@ php artisan swapi:install
 ```
 This command initialize package (copy configuration file) and run migration for planet and people table.
 
+```bash
+php artisan swapi:init
+```
+This command initialize data retring data from swapi.dev.
+
+(Full documentation: https://swapi.dev/documentation)
+
 NB. To initialize testing database run this command:
 
 ```bash
 php artisan migrate --env=testing
 ```
+
 
 ## Testing
 
