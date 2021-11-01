@@ -31,7 +31,7 @@ Laravel 8.*<br>
 To install Swapi package run this command:
 
 ```bash
-composer require christiancocco/swapi
+composer require christiancocco/swapi --with-all-dependencies
 ```
 Now you can configure testing environment file to be able to run test script.
 
