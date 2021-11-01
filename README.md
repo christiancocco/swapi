@@ -1,6 +1,6 @@
 # swapi
  
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png" width="400"></p>
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png" width="100%"></p>
 
 ## Table of Contents
 1.  [About Swapi](#about-swapi)
