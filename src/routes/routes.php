@@ -1,5 +1,6 @@
 <?php
-Route::get('swapi', function(){
-	echo 'Hello from the Swapi package!';
-});
+use Illuminate\Support\Facades\Route;
+use ChristianCocco\Swapi\Http\Controllers\SwapiController;
+
+Route::get('swapi', [SwapiController::class, 'index']);
 ?>

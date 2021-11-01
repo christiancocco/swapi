@@ -1,6 +1,6 @@
 {
     "name": "christiancocco/swapi",
-    "description": "Swapi Integration",
+    "description": "Swapi Integration for Laravel",
     "keywords": ["swapi"],
     "homepage": "https://github.com/christiancocco/swapi",
     "type": "package",
@@ -14,7 +14,8 @@
     "minimum-stability": "dev",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "phpunit/phpunit": "9.5.x-dev"
+        "phpunit/phpunit": "9.5.x-dev",
+        "laravel/framework": "^8.0"
     },
     "extra": {
         "laravel": {
