@@ -34,10 +34,10 @@ To install Swapi package run this command:
 composer require christiancocco/swapi
 ```
 Now you can configure testing environment file to be able to run test script.
-<ul>
-<li>Create testing DB</li>
-<li>Create .env.testing file in your root application folder and change DB connection parameter</li>
-<li>Add following to phpunit.xml file:
+
+1. Create testing DB<br>
+2. Create .env.testing file in your root application folder and change DB connection parameter</li>
+3. Add following to phpunit.xml file:<br>
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -53,8 +53,7 @@ Now you can configure testing environment file to be able to run test script.
     </testsuites>
 
 ```
-</li>
-</ul>
+
 ## Usage
 
 
