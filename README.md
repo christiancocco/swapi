@@ -74,7 +74,15 @@ NB. To initialize testing database run this command:
 ```bash
 php artisan migrate --env=testing
 ```
+If you want to filtering, ordering and paging <b>/api/people</b> result you can use this querystring parameter:
 
+1. query: string to search in all people fields
+2. itemperpage: item per page (default value = 10)
+3. page: page number
+4. sort: sorting field
+5. sortVer: sorting versus (ASC: ascending - default value; DESC: descending)
+
+Example: /api/people?query=fair&sort=name&sortVer=DESC&itemperpage=2&page=2
 
 ## Testing
 

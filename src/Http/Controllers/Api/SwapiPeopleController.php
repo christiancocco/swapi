@@ -30,8 +30,8 @@ class SwapiPeopleController extends Controller
             $sortVer = $request->get('sortVer');
         };
         $itemPerPage = 10;
-        if ($request->has('numitem')) {
-            $itemPerPage = $request->get('numitem');
+        if ($request->has('itemperpage')) {
+            $itemPerPage = $request->get('itemperpage');
         };
         /* Get people list */
         $results = People::when($query != "null" && $query != '', function($q) use($query) {
