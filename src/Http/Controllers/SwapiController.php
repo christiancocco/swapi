@@ -12,11 +12,12 @@ class SwapiController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @param
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
     {
+        /* Get Query string parameters for ordering, filtering and item per page */
         $query = "";
         if ($request->has('query')) {
             $query = $request->get('query');
@@ -33,7 +34,7 @@ class SwapiController extends Controller
         if ($request->has('numitem')) {
             $itemPerPage = $request->get('numitem');
         };
-
+        /* Get people list */
         $results = People::when($query != "null" && $query != '', function($q) use($query) {
             $q->where("name", "like", '%' . $query . '%');
             $q->orWhere("hair_color", "like", '%' . $query . '%');
@@ -46,13 +47,13 @@ class SwapiController extends Controller
         ->when($sort != "null" && $sort != '', function($q) use($sort, $sortVer) {
             $q->orderBy($sort, $sortVer);
         })
-        ->with(['planet'])
+        ->with(['planet']) //people object with related planet
         ->paginate($itemPerPage);
         return $results;
     }
 
     /**
-     * Display the specified resource.
+     * Get people detail by id with planet information.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

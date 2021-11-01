@@ -3,7 +3,7 @@
     "description": "Swapi Integration",
     "keywords": ["swapi"],
     "homepage": "https://github.com/christiancocco/swapi",
-    "type": "library",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
@@ -25,7 +25,8 @@
     },
     "autoload": {
         "psr-4": {
-            "ChristianCocco\\Swapi\\": "src/"
+            "ChristianCocco\\Swapi\\": "src/",
+            "ChristianCocco\\Swapi\\Tests\\": "tests/"
         }
     }
 }

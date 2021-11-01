@@ -2,12 +2,23 @@
 
 namespace ChristianCocco\Swapi\Models;
 
+use ChristianCocco\Swapi\Database\Factories\PeopleFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class People extends Model
 {
-  use HasFactory;
+    use HasFactory;
+
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory
+     */
+    protected static function newFactory()
+    {
+        return PeopleFactory::new();
+    }
 
   // Disable Laravel's mass assignment protection
   protected $guarded = [];
