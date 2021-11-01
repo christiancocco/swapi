@@ -20,7 +20,19 @@
 
 ## Technologies
 
-## Installing Swapi package
+Laravel 8.*<br>
+
+#### Dependencies
+<a href="https://github.com/guzzle/guzzle" target="_blank">guzzlehttp/guzzle</a><br>
+<a href="https://packagist.org/packages/phpunit/phpunit" target="_blank">phpunit/phpunit</a>
+
+## Install and configure Swapi Package
+
+To install Swapi package run this command:
+
+```bash
+composer require christiancocco/swapi
+```
 
 ## Usage
 
