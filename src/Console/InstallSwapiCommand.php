@@ -31,15 +31,8 @@ class InstallSwapiCommand extends Command
         }
 
         $this->comment('Creating DB structure...');
-        $defaultDB = 'default';
-        $db = $this->choice(
-            'What DB do you want to initialize?',
-            ['default', 'test'],
-            $defaultDB
-        );
-        $this->comment($db);
-        $this->callSilent('migrate');
-
+        $this->call('migrate');
+        $this->comment('Default DB initialized!');
         $this->info('Installed SwapiPackage');
     }
 

@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 
 use Tests\TestCase;
 
-class SwapiTest extends TestCase
+class SwapiFeatureTest extends TestCase
 {
     //use RefreshDatabase;
     /**

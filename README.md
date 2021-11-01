@@ -55,10 +55,30 @@ Now you can configure testing environment file to be able to run test script.
 ```
 
 ## Usage
+After installation you have to run the following command:<br>
 
+```bash
+php artisan swapi:install
+```
+This command initialize package (copy configuration file) and run migration for planet and people table.
+
+NB. To initialize testing database run this command:
+
+```bash
+php artisan migrate --env=testing
+```
 
 ## Testing
 
+To launch the Unit Test run this command:
+```bash
+php artisan test --filter=SwapiUnitTest --stop-on-failure
+```
+
+To launch the Feature Test run this command:
+```bash
+php artisan test --filter=SwapiFeatureTest --stop-on-failure
+```
 
 ## License
 
