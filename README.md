@@ -38,7 +38,7 @@ Now you can configure testing environment file to be able to run test script.
 <li>Create testing DB</li>
 <li>Create .env.testing file in your root application folder and change DB connection parameter</li>
 <li>Add following to phpunit.xml file:
-```xml
+```bash
 <?xml version="1.0" encoding="UTF-8"?>
 
     <!-- ... -->
