@@ -16,6 +16,7 @@ class SwapiServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->make('ChristianCocco\Swapi\Http\Controllers\SwapiController');
+        $this->app->make('ChristianCocco\Swapi\Http\Controllers\Api\SwapiPeopleController');
     }
 
     /**
@@ -43,5 +44,8 @@ class SwapiServiceProvider extends ServiceProvider
 
         //Load Migration
         $this->loadMigrationsFrom(__DIR__.'/storage/migrations');
+
+        //Load Views
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'swapi');
     }
 }

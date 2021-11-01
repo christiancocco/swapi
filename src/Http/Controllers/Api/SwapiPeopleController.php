@@ -1,14 +1,13 @@
 <?php
 
-namespace ChristianCocco\Swapi\Http\Controllers;
+namespace ChristianCocco\Swapi\Http\Controllers\Api;
 
 use ChristianCocco\Swapi\Models\People;
-use ChristianCocco\Swapi\Models\Planet;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 
-class SwapiController extends Controller
+class SwapiPeopleController extends Controller
 {
     /**
      * Display a listing of the resource.
