@@ -33,7 +33,28 @@ To install Swapi package run this command:
 ```bash
 composer require christiancocco/swapi
 ```
+Now you can configure testing environment file to be able to run test script.
+<ul>
+<li>Create testing DB</li>
+<li>Create .env.testing file in your root application folder and change DB connection parameter</li>
+<li>Add following to phpunit.xml file:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 
+    <!-- ... -->
+
+    <testsuites>
+
+        <!-- ... -->
+
+        <testsuite name="Swapi">
+            <directory suffix="Test.php">./vendor/christiancocco/swapi/tests</directory>
+        </testsuite>
+    </testsuites>
+
+```
+</li>
+</ul>
 ## Usage
 
 
