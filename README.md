@@ -96,6 +96,14 @@ To launch the Feature Test run this command:
 php artisan test --filter=SwapiFeatureTest --stop-on-failure
 ```
 
+To test api run
+```bash
+php artisan serve
+```
+and visit
+
+http://localhost:8000/swapitest
+
 ## License
 
 The Swapi Laravel package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
