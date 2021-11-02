@@ -28,6 +28,7 @@ class SwapiServiceProvider extends ServiceProvider
     {
         //Load Routes
         $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
 
         // Register the command if we are using the application via the CLI
@@ -46,6 +47,6 @@ class SwapiServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/storage/migrations');
 
         //Load Views
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'swapi');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'swapi');
     }
 }

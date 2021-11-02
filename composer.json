@@ -15,7 +15,8 @@
     "require": {
         "guzzlehttp/guzzle": "^7.0",
         "phpunit/phpunit": "9.5.x-dev",
-        "laravel/framework": "^8.0"
+        "laravel/framework": "^8.0",
+        "inertiajs/inertia-laravel": "dev-master"
     },
     "extra": {
         "laravel": {

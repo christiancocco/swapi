@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d8c084e69b8f7791f31223bc9144238",
+    "content-hash": "5cc3e6f080aa49b193ad19715181f116",
     "packages": [
         {
             "name": "brick/math",
@@ -896,17 +896,86 @@
             "time": "2021-10-21T23:15:39+00:00"
         },
         {
+            "name": "inertiajs/inertia-laravel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inertiajs/inertia-laravel.git",
+                "reference": "406b15af162e78be5c7793b25aadd5a183eea84b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/406b15af162e78be5c7793b25aadd5a183eea84b",
+                "reference": "406b15af162e78be5c7793b25aadd5a183eea84b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^5.4|^6.0|^7.0|^8.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "roave/security-advisories": "dev-master"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inertia\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Inertia\\": "src"
+                },
+                "files": [
+                    "./helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "https://reinink.ca"
+                }
+            ],
+            "description": "The Laravel adapter for Inertia.js.",
+            "keywords": [
+                "inertia",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/inertiajs/inertia-laravel/issues",
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v0.4.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/reinink",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-10-27T09:37:59+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d0353b8dd16bd6010e37bd658cc29d469ef4ee8d"
+                "reference": "545181da688db64fed6d8427e55f630a90ca0d32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d0353b8dd16bd6010e37bd658cc29d469ef4ee8d",
-                "reference": "d0353b8dd16bd6010e37bd658cc29d469ef4ee8d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/545181da688db64fed6d8427e55f630a90ca0d32",
+                "reference": "545181da688db64fed6d8427e55f630a90ca0d32",
                 "shasum": ""
             },
             "require": {
@@ -1066,7 +1135,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-11-01T15:19:18+00:00"
+            "time": "2021-11-02T13:53:22+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2725,12 +2794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "723de3effbd9b0ca5896c298d8fca41e3470d3d5"
+                "reference": "2c097bce07524d670ba62a85bfb572030a0edb7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/723de3effbd9b0ca5896c298d8fca41e3470d3d5",
-                "reference": "723de3effbd9b0ca5896c298d8fca41e3470d3d5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2c097bce07524d670ba62a85bfb572030a0edb7d",
+                "reference": "2c097bce07524d670ba62a85bfb572030a0edb7d",
                 "shasum": ""
             },
             "require": {
@@ -2820,7 +2889,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-28T05:33:07+00:00"
+            "time": "2021-11-02T09:45:28+00:00"
         },
         {
             "name": "psr/container",
@@ -4922,12 +4991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "e6c34f742f52cf5c6eae814f925d6654fa7603cd"
+                "reference": "457942295a2d8e87595edfced324eddcd2c76614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/e6c34f742f52cf5c6eae814f925d6654fa7603cd",
-                "reference": "e6c34f742f52cf5c6eae814f925d6654fa7603cd",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/457942295a2d8e87595edfced324eddcd2c76614",
+                "reference": "457942295a2d8e87595edfced324eddcd2c76614",
                 "shasum": ""
             },
             "require": {
@@ -4977,7 +5046,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-27T13:14:56+00:00"
+            "time": "2021-10-30T10:39:42+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -7054,7 +7123,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "phpunit/phpunit": 20
+        "phpunit/phpunit": 20,
+        "inertiajs/inertia-laravel": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
