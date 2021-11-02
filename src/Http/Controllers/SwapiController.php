@@ -6,7 +6,7 @@ use ChristianCocco\Swapi\Models\People;
 use ChristianCocco\Swapi\Models\Planet;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use PhpParser\Node\Expr\FuncCall;
 
 class SwapiController extends Controller
 {
@@ -21,5 +21,10 @@ class SwapiController extends Controller
         $res = app()->handle($req);
         $responseBody = $res->getContent();
         return view('swapi::index', ['people' => json_decode($responseBody)]);
+    }
+
+    public function swapitest(Request $request)
+    {
+        return inertia('Home');
     }
 }

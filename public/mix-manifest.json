@@ -1,5 +1,4 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/public/vendor/swapi/mix-manifest.json": "/public/vendor/swapi/mix-manifest.json"
+    "/css/app.css": "/css/app.css"
 }

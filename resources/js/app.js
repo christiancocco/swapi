@@ -1,5 +1,9 @@
+require ('./bootstrap');
+
 import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
+
+
 
 Vue.use(plugin)
 
