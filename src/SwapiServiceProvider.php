@@ -46,7 +46,7 @@ class SwapiServiceProvider extends ServiceProvider
         //Publish assets
         $this->publishes([
             __DIR__.'/../public' => public_path('vendor/swapi'),
-        ], ['swapi-assets', 'laravel-assets']);
+        ], ['swapi-assets', 'laravel-assets'], ['force']);
 
         //Load Migration
         $this->loadMigrationsFrom(__DIR__.'/storage/migrations');
