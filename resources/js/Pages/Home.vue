@@ -50,7 +50,7 @@
                   type="button"
                   @click="update"
                 >
-                  Requestddd
+                  Request
                 </button>
               </div>
             </div>
