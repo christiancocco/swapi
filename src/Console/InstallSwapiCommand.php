@@ -29,6 +29,10 @@ class InstallSwapiCommand extends Command
                 $this->info('Existing configuration was not overwritten');
             }
         }
+        /** Publishing Assets */
+        $this->comment('Publishing assets');
+        $this->publishAssets(true);
+        $this->comment('Assets published!');
         /**  DB initialization */
         $this->comment('Creating DB structure...');
         $this->call('migrate');
@@ -59,6 +63,19 @@ class InstallSwapiCommand extends Command
         $params = [
             '--provider' => "ChristianCocco\Swapi\SwapiServiceProvider",
             '--tag' => "swapi-config"
+        ];
+
+        if ($forcePublish === true) {
+            $params['--force'] = true;
+        }
+
+       $this->call('vendor:publish', $params);
+    }
+
+    private function publishAssets($forcePublish = false)
+    {
+        $params = [
+            '--tag' => "laravel-assets"
         ];
 
         if ($forcePublish === true) {
