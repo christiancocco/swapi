@@ -43,6 +43,11 @@ class SwapiServiceProvider extends ServiceProvider
             __DIR__.'/config/swapipackage.php' => config_path('swapipackage.php')
         ], 'swapi-config');
 
+        //Publish assets
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/swapi'),
+        ], ['swapi-assets', 'laravel-assets']);
+
         //Load Migration
         $this->loadMigrationsFrom(__DIR__.'/storage/migrations');
 
