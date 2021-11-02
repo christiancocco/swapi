@@ -29,10 +29,14 @@ class InstallSwapiCommand extends Command
                 $this->info('Existing configuration was not overwritten');
             }
         }
-
+        /**  DB initialization */
         $this->comment('Creating DB structure...');
         $this->call('migrate');
         $this->comment('Default DB initialized!');
+
+        /** Front End npm command */
+        //shell_exec('cd ./packages/christiancocco/swapi/ && npm run production');
+
         $this->info('Installed SwapiPackage');
     }
 
