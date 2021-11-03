@@ -38,7 +38,7 @@ class InitSwapiCommand extends Command
                     $pageNext = $responseObject->next;
                     //$this->comment(sprintf("Page %s", $page));
                     foreach ($responseObject->results as $key => $planet) {
-                        $this->comment(sprintf("Inserting planet %s of %s", $i, $responseObject->count));
+                        $this->comment(sprintf("Inserting planet %s (%s of %s)", $planet->name, $i, $responseObject->count));
                         $id = $this->extractId($planet->url);
                         $dataPlanet = [
                             "id" => $id,
@@ -76,7 +76,7 @@ class InitSwapiCommand extends Command
                         $pageNext = $responseObject->next;
                         //$this->comment(sprintf("Page %s", $page));
                         foreach ($responseObject->results as $key => $people) {
-                            $this->comment(sprintf("Inserting people %s of %s", $i, $responseObject->count));
+                            $this->comment(sprintf("Inserting %s (%s of %s)", $people->name, $i, $responseObject->count));
                             $id = $this->extractId($people->url);
                             $idPlanet = $this->extractId($people->homeworld);
                             $dataPeople = [
