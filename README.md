@@ -24,7 +24,8 @@ Laravel 8.*<br>
 
 #### Dependencies
 <a href="https://github.com/guzzle/guzzle" target="_blank">guzzlehttp/guzzle</a><br>
-<a href="https://packagist.org/packages/phpunit/phpunit" target="_blank">phpunit/phpunit</a>
+<a href="https://packagist.org/packages/phpunit/phpunit" target="_blank">phpunit/phpunit</a><br>
+<a href="https://packagist.org/packages/inertiajs/inertia-laravel" target="_blank">inertiajs/inertia-laravel</a>
 
 ## Install and configure Swapi Package
 
