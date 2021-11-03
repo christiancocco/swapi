@@ -47,8 +47,11 @@ Now you can configure testing environment file to be able to run test script.
 
         <!-- ... -->
 
-        <testsuite name="Swapi">
-            <directory suffix="Test.php">./vendor/christiancocco/swapi/tests</directory>
+        <testsuite name="SwapiUnit">
+            <directory suffix="Test.php">./packages/christiancocco/swapi/tests/Unit</directory>
+        </testsuite>
+        <testsuite name="SwapiTest">
+            <directory suffix="Test.php">./packages/christiancocco/swapi/tests/Feature</directory>
         </testsuite>
     </testsuites>
 
@@ -65,7 +68,7 @@ This command initialize package (copy configuration file) and run migration for 
 ```bash
 php artisan swapi:init
 ```
-This command initialize data retring data from swapi.dev.
+This command initialize data retrieved data from swapi.dev.
 
 (Full documentation: https://swapi.dev/documentation)
 
@@ -88,12 +91,7 @@ Example: /api/people?query=fair&sort=name&sortVer=DESC&itemperpage=2&page=2
 
 To launch the Unit Test run this command:
 ```bash
-php artisan test --filter=SwapiUnitTest --stop-on-failure
-```
-
-To launch the Feature Test run this command:
-```bash
-php artisan test --filter=SwapiFeatureTest --stop-on-failure
+php artisan test --filter=Swapi --stop-on-failure
 ```
 
 To test api run
