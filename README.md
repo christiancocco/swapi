@@ -48,10 +48,10 @@ Now you can configure testing environment file to be able to run test script.
         <!-- ... -->
 
         <testsuite name="SwapiUnit">
-            <directory suffix="Test.php">./packages/christiancocco/swapi/tests/Unit</directory>
+            <directory suffix="Test.php">./vendor/christiancocco/swapi/tests/Unit</directory>
         </testsuite>
         <testsuite name="SwapiTest">
-            <directory suffix="Test.php">./packages/christiancocco/swapi/tests/Feature</directory>
+            <directory suffix="Test.php">./vendor/christiancocco/swapi/tests/Feature</directory>
         </testsuite>
     </testsuites>
 
