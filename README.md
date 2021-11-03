@@ -102,7 +102,7 @@ php artisan serve
 ```
 and visit
 
-http://localhost:8000/swapitest
+http://localhost:8000/swapi-test
 
 ## License
 
